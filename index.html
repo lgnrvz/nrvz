@@ -3,56 +3,209 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Simple Website</title>
+  <title>NRVZ - Google Play Developer Page</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
       margin: 0;
       padding: 0;
-      text-align: center;
+      color: #202124;
     }
     header {
-      background-color: #4CAF50;
+      background-color: #1a73e8;
       color: white;
-      padding: 2rem 0;
+      padding: 1rem 2rem;
     }
-    section {
+    .container {
       padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    a {
-      color: #4CAF50;
-      text-decoration: none;
-      margin: 0 10px;
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      margin-right: 1.5rem;
+    }
+    .profile h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .app-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .app {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .app:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .app img {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      margin-bottom: 0.5rem;
+    }
+    .app h3 {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 1rem;
+    }
+    .app p {
+      font-size: 0.9rem;
+      color: #666;
     }
     footer {
-      background-color: #eee;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #555;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Welcome to My Website</h1>
-    <p>A simple and clean HTML</p>
+    <h1>NRVZ on Google Play</h1>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hello! I'm NRVZ - learning web development and this is my first website. It's basic, but it's mine!</p>
-  </section>
+  <div class="container">
+    <div class="profile">
+      <img src="https://play-lh.googleusercontent.com/a-/ACB-R5YXXXXX" alt="NRVZ Logo" />
+      <div>
+        <h1>NRVZ</h1>
+        <a href="https://play.google.com/store/apps/developer?id=NRVZ" target="_blank">Visit on Google Play</a>
+      </div>
+    </div>
 
-<!--   <section>
-    <h2>Links</h2>
-    <a href="https://github.com/" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-  </section> -->
+    <h2>Published Apps</h2>
+    <div class="app-list">
+      <!-- Example app card -->
+      <div class="app">
+        <img src="https://play-lh.googleusercontent.com/CDSfihVlx1mjLi48X1TCnw7l4baQMbxdzxZv7kkxDprezyB53bS4iFj2G3a9rxWC1Q=w240-h480-rw" alt="App Icon">
+        <h3>Offline English Dictionary</h3>
+        <h2>Your Modern & Offline English Dictionary</h2>
+
+<p>
+  Discover a fast, modern, and easy-to-use English dictionary — completely free and works offline!
+  Instantly look up thousands of word meanings with a sleek <strong>Material You</strong> design and <strong>dark mode</strong> support.
+</p>
+
+<h3>Key Features:</h3>
+<ul>
+  <li>⚡ Quick word search with recent history</li>
+  <li>🔊 Hear pronunciations with text-to-speech</li>
+  <li>🔗 Clickable synonyms to expand your vocabulary</li>
+  <li>🌐 100% offline access, no internet required</li>
+  <li>🤝 Gender-neutral definitions & examples</li>
+</ul>
+
+<p>
+  Perfect for learners, readers, and word nerds alike. <strong>More features coming soon!</strong>
+</p>
+
+      </div>
+
+      <div class="app">
+        <img src="https://play-lh.googleusercontent.com/vTR7bPfmHnulWWSYxnMVkuIHIIqXZRDVnxGi0K3an0H9SjsgwxuFtU-Otc5YZ0y3eg=w240-h480-rw" alt="App Icon">
+        <h3>FinFlow</h3>
+        <h2>FinFlow – Your Offline Financial Tracker</h2>
+
+<p>
+Welcome to <strong>FinFlow</strong>, the ultimate offline solution for managing your personal finances. Designed for simplicity and privacy, FinFlow lets you track your expenses without requiring an internet connection. All data stays on your device — secure and private — with powerful tools to help you stay on top of your budget.
+</p>
+
+<h3>Key Features:</h3>
+<ul>
+  <li><strong>Offline Expense Tracking:</strong> Works 100% offline — no internet needed to add, view, or edit your transactions.</li>
+  <li><strong>Easy Data Entry:</strong> Quickly input expenses with a user-friendly interface and smart categorization.</li>
+  <li><strong>Customizable Categories:</strong> Create your own categories to tailor the app to your personal financial goals.</li>
+  <li><strong>Export & Import:</strong> Export data as CSV for backup or analysis, and import past records to stay consistent.</li>
+  <li><strong>Detailed Reports:</strong> View breakdowns of your spending across time to make smarter money decisions.</li>
+  <li><strong>Secure Local Storage:</strong> All data is stored on your device — nothing goes online.</li>
+  <li><strong>Data Visualization:</strong> Intuitive charts and graphs help you easily understand where your money goes.</li>
+  <li><strong>Google Analytics (Anonymized):</strong> Used only to improve app performance — no personal or financial data collected.</li>
+  <li><strong>Crash Reporting:</strong> Powered by Firebase Crashlytics — no sensitive data is collected.</li>
+  <li><strong>Full Control:</strong> You can add, edit, delete, or export anytime. No data is shared or uploaded.</li>
+</ul>
+
+<h3>Why Choose FinFlow?</h3>
+<ul>
+  <li><strong>Privacy First:</strong> Your financial data never leaves your device.</li>
+  <li><strong>Simple & Intuitive:</strong> Clean interface that’s easy for anyone to use.</li>
+  <li><strong>Complete Budget Tools:</strong> Manage, analyze, and track all in one app.</li>
+  <li><strong>No Internet Required:</strong> Use it anytime, anywhere — fully offline.</li>
+  <li><strong>Ongoing Updates:</strong> We’re actively improving FinFlow based on your feedback.</li>
+</ul>
+
+<h3>How to Get Started:</h3>
+<ol>
+  <li><strong>Download & Install:</strong> Get FinFlow from the Google Play Store.</li>
+  <li><strong>Set Categories:</strong> Customize your expense types to match your lifestyle.</li>
+  <li><strong>Add Transactions:</strong> Start logging your daily expenses with ease.</li>
+  <li><strong>Export Reports:</strong> View and download CSV reports to analyze your spending.</li>
+</ol>
+
+<h3>Feedback & Support:</h3>
+<p>
+We value your feedback! For questions or suggestions, reach us at <a href="mailto:dev.nrvz@gmail.com">dev.nrvz@gmail.com</a>.
+Your input helps us improve the app and serve you better.
+</p>
+
+<p><strong>Download FinFlow today and take control of your finances — offline and secure.</strong></p>
+
+      </div>
+      
+      <div class="app">
+        <img src="https://play-lh.googleusercontent.com/GRn5_OxJQdB6x5NOrgr0DK8mzHaazn8QUiPWRyJac2mbj9ctRd629AUL0JvJ8mT-rGA=w240-h480-rw" alt="App Icon">
+        <h3>MathLakas</h3>
+        <h2>Welcome to MathLakas!</h2>
+
+<p>
+Where your math skills determine the challenge. Dive into an exciting world of dynamic math problems that adapt to your performance!
+</p>
+
+<p>
+<strong>MathLakas</strong> automatically adjusts difficulty as you play. The better you perform, the more intense and rewarding the challenges become.
+</p>
+
+<h3>Features:</h3>
+<ul>
+  <li>🧠 Adaptive difficulty that matches your skill level</li>
+  <li>➕ Lightning-fast addition & 🧩 brain-teasing subtraction</li>
+  <li>✖️ Multiplication and ➗ division that scale in challenge</li>
+  <li>🌍 Global competition with leaderboards and achievements</li>
+  <li>🔥 Score streaks to boost your points and climb the ranks</li>
+</ul>
+
+<p>
+Whether you're sharpening your basic math or pushing for elite scores, MathLakas blends fun and learning into one powerful experience.
+</p>
+
+<p>
+<strong>Download now</strong> and unlock your inner math champion!
+</p>
+
+      </div>
+
+      <!-- Add more apps as needed -->
+    </div>
+  </div>
 
   <footer>
-    &copy; 2025 My Simple Website
+    Google Play Developer page.<br/>
+    &copy; 2025 NRVZ
   </footer>
 
 </body>
